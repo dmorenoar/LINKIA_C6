@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<peliculas>
+	<pelicula valoracion="9">
+		<titulo>E.T</titulo>
+		<director>Steven Spielberg</director>
+		<anyo>1987</anyo>
+		<genero>Fantástico</genero>
+	</pelicula>
+	<pelicula valoracion="8.5">
+		<titulo>Moulin Rouge</titulo>
+		<director>Baz Luhrman</director>
+		<anyo>2001</anyo>
+		<genero>Drama - Musical</genero>
+	</pelicula>
+	<pelicula valoracion="9.8">
+		<titulo>El Padrino</titulo>
+		<director>F. Ford Coppola</director>
+		<anyo>1972</anyo>
+		<genero>Acción</genero>
+	</pelicula>
+</peliculas>
+
+
