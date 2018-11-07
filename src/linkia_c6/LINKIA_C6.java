@@ -14,6 +14,7 @@ import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -70,20 +71,25 @@ public class LINKIA_C6 {
             Pelicula anillos = new Pelicula("El señor de los anillos: La comunidad del anillo", "Peter Jackson", 2001, "Fantástico");
             XMLEncoder xml = new XMLEncoder(new FileOutputStream(new File("mispeliculas.xml")));
 
-            xml.writeObject(cube);
-            xml.writeObject(anillos);
+            List<Pelicula> listaPeliculas = new ArrayList();
+            
+            listaPeliculas.add(cube);
+            listaPeliculas.add(anillos);
+
+            xml.writeObject(listaPeliculas);
             xml.close();
 
 
             /* Lectura del fichero XML*/
             XMLDecoder xmlDecoder = new XMLDecoder(new BufferedInputStream(new FileInputStream("mispeliculas.xml")));
 
-            Pelicula peliVacia;
-            peliVacia = (Pelicula) xmlDecoder.readObject();
-            System.out.println(peliVacia);
+            List<Pelicula> listaDecoder = (List<Pelicula>) xmlDecoder.readObject();
 
-            peliVacia = (Pelicula) xmlDecoder.readObject();
-            System.out.println(peliVacia);
+            xmlDecoder.close();
+
+            for (Pelicula p: listaDecoder) {
+                System.out.println(p);
+            }
 
         } catch (IOException ex) {
             Logger.getLogger(LINKIA_C6.class.getName()).log(Level.SEVERE, null, ex);

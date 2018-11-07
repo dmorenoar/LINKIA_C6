@@ -1,31 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <java version="1.8.0_144" class="java.beans.XMLDecoder">
- <object class="linkia_c6.Pelicula">
-  <void property="anyo">
-   <int>1995</int>
+ <object class="java.util.ArrayList">
+  <void method="add">
+   <object class="linkia_c6.Pelicula">
+    <void property="anyo">
+     <int>1995</int>
+    </void>
+    <void property="director">
+     <string>Vicenzo Natali</string>
+    </void>
+    <void property="genero">
+     <string>Suspense</string>
+    </void>
+    <void property="titulo">
+     <string>Cube</string>
+    </void>
+   </object>
   </void>
-  <void property="director">
-   <string>Vicenzo Natali</string>
-  </void>
-  <void property="genero">
-   <string>Suspense</string>
-  </void>
-  <void property="titulo">
-   <string>Cube</string>
-  </void>
- </object>
- <object class="linkia_c6.Pelicula">
-  <void property="anyo">
-   <int>2001</int>
-  </void>
-  <void property="director">
-   <string>Peter Jackson</string>
-  </void>
-  <void property="genero">
-   <string>Fantástico</string>
-  </void>
-  <void property="titulo">
-   <string>El señor de los anillos: La comunidad del anillo</string>
+  <void method="add">
+   <object class="linkia_c6.Pelicula">
+    <void property="anyo">
+     <int>2001</int>
+    </void>
+    <void property="director">
+     <string>Peter Jackson</string>
+    </void>
+    <void property="genero">
+     <string>Fantástico</string>
+    </void>
+    <void property="titulo">
+     <string>El señor de los anillos: La comunidad del anillo</string>
+    </void>
+   </object>
   </void>
  </object>
 </java>
